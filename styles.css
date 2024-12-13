@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom right, #00b4d8, #48c6ef);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Container to center content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styling */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Section for the buttons */
+.button-section {
+  margin-bottom: 60px;
+}
+.button-section h2 {
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.pokemonButton {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #ffcd02;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #333; /* Dark text color for better visibility */
+  font-weight: bold; /* Make the text bold for better emphasis */
+  text-transform: uppercase; /* Transform text to uppercase for a stronger appearance */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pokemonButton:hover {
+  background-color: #ffb200;
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pokemonButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+  color: #777; /* Lighter text when disabled */
+}
+
+/* Result Section */
+#resultSection {
+  margin-top: 40px;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#result img {
+  width: 14vw; /* Make the image width relative to the viewport */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 1000px; /* Limit the maximum width */
+  max-height: 1000px; /* Limit the maximum height */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+#result img:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #eee;
+  text-align: center;
+}
